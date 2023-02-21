@@ -59,6 +59,10 @@ p {
     font-size: 0.6rem;
 }
 
+a {
+    font-family: $lien;
+}
+
 @font-face {
 	font-family: 'themify';
 	src:url('../fonts/themify.eot');
