@@ -2,8 +2,17 @@
 
 form {
     background-color: $grisClairMoyen;
-}
-input {
-    background-color: $grisClairMoyen;
+        input {
+            border-style: none none solid none;
+            background-color: $grisClairMoyen;
+        }
+        textarea {
+            border-style: none none solid none;
+            background-color: $grisClairMoyen;
+        }
+        div {
+            padding: 20px;
+        }
+    
 }
 
