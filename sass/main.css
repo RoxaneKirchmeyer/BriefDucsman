@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i, input, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -17,6 +17,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .headerAnnotation {
@@ -46,6 +48,7 @@ h2 {
 h3 {
   font-family: "Gilda Display", serif;
   font-size: 1.3rem;
+  color: #ffffff;
 }
 
 p {
@@ -54,34 +57,64 @@ p {
   font-size: 0.6rem;
 }
 
+header {
+  min-height: 90vh;
+}
+header a {
+  color: #ffffff;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  padding: 10px;
+}
+
+#Services a {
+  color: #ffffff;
+  background: #ab8a62;
+  padding: 10px;
+}
+
 footer {
   background-color: #222222;
 }
-
-h3 {
+footer h3 {
   color: "Gilda Display", serif;
 }
-
-p {
+footer p {
+  color: #8d8d8d;
+}
+footer span {
+  color: #ffffff;
+}
+footer p span {
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+}
+footer li {
   color: #8d8d8d;
 }
 
-span {
-  color: #ffffff;
+.legal {
+  background-color: blue;
 }
 
-p span {
-  color: #ffffff;
-}
-
-a {
-  color: #ffffff;
-}
-
-li {
-  color: #222222;
-}
-
-div {
+.footer {
   display: flex;
+  justify-content: space-around;
+}
+
+form {
+  background-color: #222222;
+}
+
+input {
+  background-color: #222222;
+}
+
+body {
+  background-color: #222222;
+}
+
+header {
+  background-image: url(/img/rooms/7.jpg);
 }/*# sourceMappingURL=main.css.map */
