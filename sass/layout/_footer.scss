@@ -1,2 +1,33 @@
-// footer
+// footer    
+
+
+footer {
+    background-color: $grisClairMoyen;
+
+h3 {
+   color: $titre;
+}
+p {
+    color: $grisClair;
+}
+span {
+    color: $blanc ;
+}
+p span {
+    color: $blanc;
+}
+a {
+    color: $blanc;
+}
+li {
+    color: $grisClair;
+}
+}
+.legal {
+    background-color: blue;
+}
+ .footer {
+    display: flex;
+    justify-content: space-around;
+}
 
