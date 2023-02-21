@@ -57,6 +57,10 @@ p {
   font-size: 0.6rem;
 }
 
+a {
+  font-family: "Barlow", sans-serif;
+}
+
 header {
   min-height: 90vh;
 }
