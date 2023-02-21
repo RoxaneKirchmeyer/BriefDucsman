@@ -1,11 +1,36 @@
 // font-size:
-// font-family:
 // box-sizing: border-box;
 // Applications des couleurs globales du site
 // boilerplate ?
 
-// exemple
-// aside, footer, form, header, nav, .grid {
-//     box-sizing: border-box;
-// }
+$titre : $blanc;
+$button : $marronButton;
+$texte : $grisClair;
+$special : $marron;
+
+
+$texte : 'Barlow', sans-serif ;
+$lien : 'Barlow', sans-serif ;
+$annotation : 'Barlow Condensed', sans-serif ; 
+$titre : 'Gilda Display', serif ;
+
+.headerAnnotation {
+    font-size:  0.6rem;
+    color: $blanc;
+    font-family: $annotation;
+}
+
+.annotation {
+    font-family: $;
+    font-size: 0.6rem;
+    color: $special;
+}
+
+
+
+
+
+
+
+
 
