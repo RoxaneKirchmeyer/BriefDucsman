@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/sass/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Gilda+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Gilda+Display&display=swap"
+        rel="stylesheet">
     <title>Chambres & suites</title>
 </head>
 
@@ -39,12 +41,12 @@
     <header>
         <span></span>
         <p>HOTEL DE LUXE A PARIS </p>
-        <h1>CHAMBRE DELUXE</h1>
+        <h1>CHAMBRE<br> DELUXE</h1>
     </header>
-    
+
     <main>
-        <article>
-            <p>DUCSMAN</p>
+        <section class="détails">
+            <p class="nom">DUCSMAN</p>
             <h2>Chambre Deluxe</h2>
             <p>Notre chambre Deluxe offre un niveau de confort et de luxe supérieur aux chambres standard de l'hôtel.
                 Elle est plus spacieuse que les chambres standard, offrant plus d'espace pour se détendre et se déplacer
@@ -63,32 +65,35 @@
                 peignoirs et des chaussons.</p>
 
             <p>Enfin, votre chambre Deluxe offrent une vue imprenable sur la ville ou sur les environs de l'hôtel.</p>
-            <div>
-                <h3>Check-in</h3>
-                <ul>
-                    <li>Check-in à partir de 9h00</li>
-                    <li>Check-in en ligne possible</li>
-                </ul>
+            <div class="list">
+                <div>
+                    <h3>Check-in</h3>
+
+                    <ul>
+                        <li>Check-in à partir de 9h00</li>
+                        <li>Check-in en ligne possible</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Check-out</h3>
+                    <ul>
+                        <li>Avant 12h00</li>
+                        <li>Check-out Express(supplément)</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>Check-out</h3>
-                <ul>
-                    <li>Avant 12h00</li>
-                    <li>Check-out Express(supplément)</li>
-                </ul>
-            </div>
-            <h2>Instructions pour le check-in</h2>
+            <h3>Instructions pour le check-in</h3>
             <p>Les invités reçoivent un email 5 jours avant l'arrivée prévue avec toutes les informations nécessaires.
                 Nos hôtes et hôtesses d'accueil pourront vous donner plus d'informations, n'hésitez pas à les contacter
                 avant votre arrivée</p>
-            <h2>Animaux de compagnie</h2>
+            <h3>Animaux de compagnie</h3>
             <p>Pour le confort de tous, ils ne sont pas acceptés au sein de nos chambres</p>
-            <h2>Enfants/bébés et lit supplémentaire</h2>
+            <h3>Enfants/bébés et lit supplémentaire</h3>
             <p>Les enfants sont les bienvenues et les bébés de moins de 2 ans sont accueillis gratuitement. Un lit bébé
                 peut vous être fourni gracieusement sur demande lors de votre réservation</p>
 
-            <a href="#">RESERVER MAINTENANT</a>
-        </article>
+            <button href="#">RESERVER MAINTENANT</button>
+        </section>
 
         <aside>
             <h3>Aménagements</h3>
@@ -105,8 +110,8 @@
 
     <footer>
 
-        <div class="footer">
-            <h3>A propos de notre hôtel</h3>
+        <div class="apropos">
+            <h2>A propos de notre hôtel</h2>
             <p>Le seul hôtel 5 étoils de Paris. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos?</p>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus neque voluptatem odit,
@@ -114,11 +119,11 @@
             </p>
         </div>
 
-        <div class="">
-            <h3>Contact</h3>
+        <div class="contact">
+            <h2>Contact</h2>
             <p>23 avenue des Nations Unies<br>75001 Paris</p>
             <span></span>
-            <p>03 20 01 02 03</p>
+            <span>03 20 01 02 03</span>
             <a href="info@ducsman.com"></a>
             <ul class="social media">
                 <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
@@ -129,18 +134,18 @@
             </ul>
         </div>
     </footer>
-      
-        <div class="legal">
-            <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Conditions Générales de ventes</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li>@ Copyright 2023</li>
-                <li>Ducsman Group</li>
-            </ul>
-        </div>
 
-    
+    <div class="legal">
+        <ul>
+            <li><a href="#">Mentions légales -</a></li>
+            <li><a href="#">Conditions Générales de ventes -</a></li>
+            <li><a href="#">Politique de confidentialité -</a></li>
+            <li>© Copyright 2023 -</li>
+            <li>Ducsman Group</li>
+        </ul>
+    </div>
+
+
 
     <script src="https://kit.fontawesome.com/b6a06ea3e4.js" crossorigin="anonymous"></script>
 
