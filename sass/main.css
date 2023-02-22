@@ -21,46 +21,6 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
-.headerAnnotation {
-  font-size: 0.6rem;
-  color: #ffffff;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.annotation {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.6rem;
-  color: #aa8453;
-}
-
-h1 {
-  font-family: "Gilda Display", serif;
-  font-size: 3rem;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-
-p {
-  font-family: "Barlow", sans-serif;
-  color: #8d8d8d;
-  font-size: 0.6rem;
-}
-
-a {
-  font-family: "Barlow", sans-serif;
-}
-
 header {
   min-height: 90vh;
 }
