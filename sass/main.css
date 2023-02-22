@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, input, center,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -22,40 +22,19 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
-.headerAnnotation {
-  font-size: 0.6rem;
+header {
+  min-height: 90vh;
+}
+header a {
   color: #ffffff;
-  font-family: "Barlow Condensed", sans-serif;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
+  padding: 10px;
 }
 
-.annotation {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.6rem;
-  color: #aa8453;
-}
-
-h1 {
-  font-family: "Gilda Display", serif;
-  font-size: 3rem;
+#Services a {
   color: #ffffff;
-}
-
-h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-
-p {
-  font-family: "Barlow", sans-serif;
-  color: #8d8d8d;
-  font-size: 0.6rem;
+  background: #ab8a62;
+  padding: 10px;
 }
 
 @font-face {
@@ -87,10 +66,15 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+<<<<<<< HEAD
 footer h2 {
   color: #ffffff;
   margin-bottom: 10px;
   font-size: small;
+=======
+footer h3 {
+  color: #ffffff;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
 footer p {
   color: #8d8d8d;
@@ -115,9 +99,13 @@ footer ul {
 }
 
 .legal {
+<<<<<<< HEAD
   height: 100px;
   background-color: #1e1e1e;
   font-size: x-small;
+=======
+  background-color: #222222;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
 .legal ul {
   display: flex;
@@ -131,9 +119,16 @@ footer ul {
 form {
   background-color: #222222;
 }
-
-input {
+form input {
+  border-style: none none solid none;
   background-color: #222222;
+}
+form textarea {
+  border-style: none none solid none;
+  background-color: #222222;
+}
+form div {
+  padding: 20px;
 }
 
 body {
@@ -141,6 +136,7 @@ body {
 }
 
 header {
+<<<<<<< HEAD
   background-image: url("/img/rooms/4.jpg");
   background-position: center;
   background-size: cover;
@@ -212,4 +208,17 @@ aside h3 {
 }
 aside li {
   margin-bottom: 10px;
+=======
+  background-image: url("/img/rooms/7.jpg");
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+p article {
+  margin-bottom: 2em;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }/*# sourceMappingURL=main.css.map */
