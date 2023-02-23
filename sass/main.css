@@ -37,44 +37,16 @@ header a {
   padding: 10px;
 }
 
-@font-face {
-  font-family: "themify";
-  src: url("../fonts/themify.eot");
-  src: url("../fonts/themify.eot?#iefix") format("embedded-opentype"), url("../fonts/themify.woff") format("woff"), url("../fonts/themify.ttf") format("truetype"), url("../fonts/themify.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-[class^=ti-], [class*=" ti-"] {
-  font-family: "themify";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.ti-star:before {
-  content: "\e60a";
-}
-
 footer {
   background-color: #222222;
   margin: 50px;
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 footer h2 {
   color: #ffffff;
   margin-bottom: 10px;
   font-size: small;
-=======
-footer h3 {
-  color: #ffffff;
->>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
 footer p {
   color: #8d8d8d;
@@ -99,13 +71,9 @@ footer ul {
 }
 
 .legal {
-<<<<<<< HEAD
   height: 100px;
   background-color: #1e1e1e;
   font-size: x-small;
-=======
-  background-color: #222222;
->>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
 .legal ul {
   display: flex;
@@ -132,11 +100,23 @@ form div {
 }
 
 body {
+  display: grid;
+  grid-template-columns: 20% 85%;
+}
+
+nav {
+  width: 20%;
+  background-color: #1b1b1b;
+  min-height: 100%;
+  grid-row: span 3;
+  position: fixed;
+}
+
+body {
   background-color: #222222;
 }
 
 header {
-<<<<<<< HEAD
   background-image: url("/img/rooms/4.jpg");
   background-position: center;
   background-size: cover;
@@ -208,17 +188,4 @@ aside h3 {
 }
 aside li {
   margin-bottom: 10px;
-=======
-  background-image: url("/img/rooms/7.jpg");
-  max-width: 100%;
-  height: auto;
-}
-
-h3 {
-  color: #ffffff;
-}
-
-p article {
-  margin-bottom: 2em;
->>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }/*# sourceMappingURL=main.css.map */
