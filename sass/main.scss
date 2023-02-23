@@ -2,6 +2,11 @@
 @import "./base/reset";
 @import "./base/typography";
 
+//utils
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
 
 //components
 @import "./components/buttons";
@@ -27,10 +32,6 @@
 //themes
 @import "./themes/darktheme";
 
-//utils
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/variables";
 
 //vendors
 @import "./vendors/vendor";

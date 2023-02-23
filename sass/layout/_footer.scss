@@ -3,12 +3,20 @@
 
 footer {
     background-color: $grisClairMoyen;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
 
-h3 {
+
+h2 {
    color: $blanc;
+   margin-bottom: 10px;
+   font-size: small;
 }
 p {
     color: $grisClair;
+    
+
 }
 span {
     color: $blanc ;
@@ -21,13 +29,29 @@ a {
 }
 li {
     color: $grisClair;
+    margin-bottom: 10px;
 }
+   ul { display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   }
 }
+ 
 .legal {
-    background-color: $grisClairMoyen;
-}
- .footer {
+    height: 100px;
+    background-color: $grisFonceMoyen;
+    font-size: x-small;
+
+
+    ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+a {
+    color: $blanc;
+}
 }
 

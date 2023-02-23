@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,42 +22,6 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
-.headerAnnotation {
-  font-size: 0.6rem;
-  color: #ffffff;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.annotation {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 0.6rem;
-  color: #aa8453;
-}
-
-h1 {
-  font-family: "Gilda Display", serif;
-  font-size: 3rem;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-}
-
-p {
-  font-family: "Barlow", sans-serif;
-  color: #8d8d8d;
-  font-size: 0.6rem;
-}
-
 header {
   min-height: 90vh;
 }
@@ -72,11 +37,44 @@ header a {
   padding: 10px;
 }
 
+@font-face {
+  font-family: "themify";
+  src: url("../fonts/themify.eot");
+  src: url("../fonts/themify.eot?#iefix") format("embedded-opentype"), url("../fonts/themify.woff") format("woff"), url("../fonts/themify.ttf") format("truetype"), url("../fonts/themify.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=ti-], [class*=" ti-"] {
+  font-family: "themify";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-star:before {
+  content: "\e60a";
+}
+
 footer {
   background-color: #222222;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
 }
+<<<<<<< HEAD
+footer h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: small;
+=======
 footer h3 {
-  color: "Gilda Display", serif;
+  color: #ffffff;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
 footer p {
   color: #8d8d8d;
@@ -92,15 +90,30 @@ footer a {
 }
 footer li {
   color: #8d8d8d;
+  margin-bottom: 10px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .legal {
-  background-color: blue;
+<<<<<<< HEAD
+  height: 100px;
+  background-color: #1e1e1e;
+  font-size: x-small;
+=======
+  background-color: #222222;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }
-
-.footer {
+.legal ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+}
+.legal a {
+  color: #ffffff;
 }
 
 form {
@@ -123,5 +136,89 @@ body {
 }
 
 header {
-  background-image: url(/img/rooms/7.jpg);
+<<<<<<< HEAD
+  background-image: url("/img/rooms/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header p {
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin: 14px;
+}
+header h1 {
+  letter-spacing: 4px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: xx-small;
+}
+main .nom {
+  color: #aa8453;
+}
+main h2 {
+  margin: 10px 0px 10px 0px;
+}
+main h3 {
+  color: #ffffff;
+  font-size: small;
+}
+main p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+main li {
+  color: #8d8d8d;
+  margin-bottom: 10px;
+}
+main .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .détails {
+  margin-right: 70px;
+}
+main button {
+  color: #ffffff;
+  background-color: #8d8d8d;
+  font-size: 8px;
+  border: none;
+  padding: 10px 20px;
+}
+
+aside {
+  margin-top: 90px;
+}
+aside h3 {
+  margin-bottom: 15px;
+}
+aside li {
+  margin-bottom: 10px;
+=======
+  background-image: url("/img/rooms/7.jpg");
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+p article {
+  margin-bottom: 2em;
+>>>>>>> 6ac2570e3af6a0d24a526175be5e123177eae61e
 }/*# sourceMappingURL=main.css.map */

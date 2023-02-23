@@ -4,17 +4,100 @@ body {
 
 
 header {
-    background-image: url("/img/rooms/7.jpg");
-    max-width: 100%;
-    height: auto;
+    background-image: url("/img/rooms/4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        color: $blanc;
+        letter-spacing: 3px;
+        margin: 14px;
+    }
+    h1 {
+        letter-spacing: 4px;
+    }
     
     
 }
+main{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-small;
+
+     .nom{
+    color: $marron;
+        
+    }
+
+    h2 {
+    margin: 10px 0px 10px 0px;
+    }
 
 
-h3 {
+    h3 {
     color: $blanc;
+    font-size: small;
+   
+   
+  
+    }
+    p {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+
+    }
+    li {
+    color: $grisClair;
+    margin-bottom: 10px;
+
+    
+   
+  
+    } 
+    .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    
+
+    
+    } 
+
+    .détails {
+    margin-right: 70px;
+    
+    
+    }
+    button {
+        color: $blanc;
+        background-color: $grisClair;
+        font-size: 8px;
+        border: none;
+        padding: 10px 20px;
+        
+    }
 }
-p article {
-    margin-bottom: 2em;
+aside {
+    margin-top: 90px;
+
+    h3{
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 10px;
+        
+    }
 }
