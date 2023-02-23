@@ -112,6 +112,10 @@ nav {
   position: fixed;
 }
 
+main {
+  grid-column-start: 2;
+}
+
 body {
   background-color: #222222;
 }
