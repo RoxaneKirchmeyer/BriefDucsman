@@ -1,1 +1,9 @@
 // nav
+
+nav {
+    width: 20%;
+    background-color: $grisFonce;
+    min-height: 100%;
+    grid-row: span 3;
+    position: fixed;
+}
