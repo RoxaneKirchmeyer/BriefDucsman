@@ -3,12 +3,21 @@
 
 footer {
     background-color: $grisClairMoyen;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
-h3 {
+
+h2 {
    color: $blanc;
+   margin-bottom: 12px;
+   font-size: large;
 }
 p {
     color: $grisClair;
+    width: 50%;
+
 }
 span {
     color: $blanc ;
@@ -21,13 +30,59 @@ a {
 }
 li {
     color: $grisClair;
+    margin-bottom: 10px;
 }
-}
+ul {
+    width: 40%;
+     display: flex;
+     justify-content: center;
+    
+   }
+ 
+   }
+   
+
+
+
+ 
 .legal {
-    background-color: $grisClairMoyen;
-}
- .footer {
+    height: 100px;
+    background-color: $grisFonceMoyen;
+    font-size: x-small;
+    
+   
+    
+
+
+    ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+   
+
+    
+}
+a {
+    color: $blanc;
+}
+.text {
+    color: $grisClair;
+}
+
+}
+.contact {
+    margin-left: 90px;
+    display: grid;
+    gap: 10px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+    }    
+}
+.mail {
+    text-decoration: underline;
+    
+    
 }
 

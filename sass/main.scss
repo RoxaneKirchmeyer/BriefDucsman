@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 //vendors
 @import "./vendors/vendor";
+=======
+@import "./vendors/vendor";
+
+
+//base
+@import "./base/reset";
+@import "./base/typography";
+>>>>>>> b56cbb7aaeddd76afd3ada5d2e9f24b2158e2185
 
 //utils
 @import "./utils/functions";
@@ -26,13 +35,12 @@
 @import "./layout/grid";
 @import "./layout/header";
 @import "./layout/nav";
+@import "./layout/main";
 
 
 //pages
 @import "./pages/chambres";
-@import "./pages/contact";
-@import "./pages/index";
-
+@import "pages/contact";
 
 //themes
 @import "./themes/darktheme";

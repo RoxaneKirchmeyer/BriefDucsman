@@ -1,4 +1,5 @@
-html, body, div, span, applet, object, iframe,
+@charset "UTF-8";
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -38,12 +39,19 @@ header a {
 
 footer {
   background-color: #222222;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
-footer h3 {
+footer h2 {
   color: #ffffff;
+  margin-bottom: 12px;
+  font-size: large;
 }
 footer p {
   color: #8d8d8d;
+  width: 50%;
 }
 footer span {
   color: #ffffff;
@@ -56,15 +64,43 @@ footer a {
 }
 footer li {
   color: #8d8d8d;
+  margin-bottom: 10px;
+}
+footer ul {
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .legal {
-  background-color: #222222;
+  height: 100px;
+  background-color: #1e1e1e;
+  font-size: x-small;
+}
+.legal ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.legal a {
+  color: #ffffff;
+}
+.legal .text {
+  color: #8d8d8d;
 }
 
-.footer {
+.contact {
+  margin-left: 90px;
+  display: grid;
+  gap: 10px;
+}
+.contact ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.mail {
+  text-decoration: underline;
 }
 
 form {
@@ -83,19 +119,132 @@ form div {
 }
 
 body {
+  display: grid;
+  grid-template-columns: 20% 85%;
+}
+
+nav {
+  width: 20%;
+  background-color: #1b1b1b;
+  min-height: 100%;
+  grid-row: span 3;
+  position: fixed;
+}
+
+main {
+  grid-column-start: 2;
+}
+
+body {
   background-color: #222222;
 }
 
-h3 {
+.chambre {
+  grid-column-start: 2;
+}
+.chambre header {
+  background-image: url("/img/rooms/4.jpg");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.chambre header p {
   color: #ffffff;
+  letter-spacing: 5px;
+  margin: 14px;
+}
+.chambre header h1 {
+  letter-spacing: 20px;
+  color: #ffffff;
+  font-size: 70px;
+}
+.chambre header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-p article {
-  margin-bottom: 2em;
+main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 4fr 1fr;
+}
+main ul {
+  font-size: 1em;
+}
+main .nom {
+  color: #aa8453;
+  font-size: 60pxS;
+}
+main h2 {
+  margin: 10px 0px 10px 0px;
+  color: #ffffff;
+  font-size: xx-large;
+}
+main h3 {
+  color: #ffffff;
+  font-size: x-large;
+}
+main p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #8d8d8d;
+  font-size: large;
+}
+main li {
+  color: #8d8d8d;
+  margin-bottom: 10px;
+}
+main .list {
+  display: flex;
+}
+main .check-in {
+  width: 50%;
+}
+main .check-in h3 {
+  margin-bottom: 20px;
+}
+main .check-out {
+  width: 50%;
+}
+main .check-out h3 {
+  margin-bottom: 20px;
+}
+main .ti-check {
+  color: #aa8453;
+}
+main .détails {
+  margin-right: 70px;
+}
+main button {
+  color: #ffffff;
+  background-color: #2b2b2b;
+  font-size: 8px;
+  border: none;
+  padding: 10px 20px;
+}
+main span {
+  margin-right: 12px;
 }
 
-.header {
-  background-image: url("/img/rooms/7.jpg");
-  max-width: 100%;
-  height: auto;
+aside {
+  margin-top: 90px;
+}
+aside h3 {
+  margin-bottom: 15px;
+}
+aside li {
+  margin-bottom: 10px;
+}
+aside span {
+  color: #aa8453;
+  margin-right: 12px;
 }/*# sourceMappingURL=main.css.map */
