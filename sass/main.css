@@ -22,13 +22,6 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-h1 {
-  font-family: "Gilda Display", serif;
-  font-size: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-=======
 .headerAnnotation {
   font-size: 0.6rem;
   color: #ffffff;
@@ -44,29 +37,24 @@ h1 {
 h1 {
   font-family: "Gilda Display", serif;
   font-size: 3rem;
->>>>>>> 089d7abc537f8a8f773e82ad7cae745f54f69b7c
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   color: #ffffff;
 }
 
 h2 {
   font-family: "Gilda Display", serif;
   font-size: 1.5rem;
-<<<<<<< HEAD
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-=======
->>>>>>> 089d7abc537f8a8f773e82ad7cae745f54f69b7c
   color: #ffffff;
 }
 
 h3 {
   font-family: "Gilda Display", serif;
   font-size: 1.3rem;
-<<<<<<< HEAD
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
-=======
->>>>>>> 089d7abc537f8a8f773e82ad7cae745f54f69b7c
   color: #ffffff;
 }
 
@@ -74,14 +62,8 @@ p {
   font-family: "Barlow", sans-serif;
   color: #8d8d8d;
   font-size: 0.6rem;
-<<<<<<< HEAD
   margin-top: 0.6rem;
   margin-bottom: 0.6rem;
-=======
-}
-p.titre-espace {
-  letter-spacing: 5px;
->>>>>>> 089d7abc537f8a8f773e82ad7cae745f54f69b7c
 }
 
 a {
@@ -372,13 +354,6 @@ body#chambre {
   background-image: url(/img/slider/2.jpg);
   background-position: 100% 58%;
 }
-<<<<<<< HEAD
-=======
-.Container h2 {
-  font-size: 4em;
-  color: #ffffff;
-}
->>>>>>> 089d7abc537f8a8f773e82ad7cae745f54f69b7c
 .Container p {
   font-size: 20px;
   color: #8d8d8d;
