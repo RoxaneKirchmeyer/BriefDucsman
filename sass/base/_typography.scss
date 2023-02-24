@@ -12,17 +12,17 @@ $lien : 'Barlow', sans-serif ;
 $annotation : 'Barlow Condensed', sans-serif ; 
 $titre : 'Gilda Display', serif ;
 
-// .headerAnnotation {
-//     font-size:  0.6rem;
-//     color: $blanc;
-//     font-family: $annotation;
-// }
+.headerAnnotation {
+    font-size:  0.6rem;
+    color: $blanc;
+    font-family: $annotation;
+}
 
-// .annotation {
-//     font-family: $annotation;
-//     font-size: 0.6rem;
-//     color: $special;
-// }
+.annotation {
+    font-family: $annotation;
+    font-size: 0.6rem;
+    color: $special;
+}
 
 h1 {
     font-family: $titre;
