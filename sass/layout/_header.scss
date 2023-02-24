@@ -1,1 +1,11 @@
 // header
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    div {
+        margin-top: 200px;
+    }
+}

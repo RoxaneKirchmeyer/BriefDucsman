@@ -6,5 +6,52 @@ nav {
     min-height: 100%;
     grid-row: span 3;
     position: fixed;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ti-star {
+            color: $jauneEtoile;
+        }
+        a {
+            color: $grisClair;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding: 20px;
+        }
+
+        li {
+            padding: 10px;
+        }
    
+        .ducsman {
+            font-family: $titre;
+            font-size: 1.5rem;
+            color: $special;
+            font-weight: 500;
+        }
+
+        .catchphrase {
+            color: $blanc;
+            font-size: 0.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .tel {
+            padding: 25px;
+        }
+
+        .flaticon-call {
+            color: $special;
+            font-size: 2rem;
+        }
+
+        .num {
+            color: $special;
+            font-size: 1.2rem;
+        }
 }

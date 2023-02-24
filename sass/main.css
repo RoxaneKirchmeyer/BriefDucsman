@@ -22,6 +22,42 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "Gilda Display", serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Gilda Display", serif;
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  color: #8d8d8d;
+  font-size: 0.6rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+}
+
 header {
   min-height: 90vh;
 }
@@ -123,12 +159,61 @@ body {
   grid-template-columns: 20% 80%;
 }
 
+header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+header div {
+  margin-top: 200px;
+}
+
 nav {
   width: 20%;
   background-color: #1b1b1b;
   min-height: 100%;
   grid-row: span 3;
   position: fixed;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+}
+nav .ti-star {
+  color: #e3a752;
+}
+nav a {
+  color: #8d8d8d;
+  margin-bottom: 20px;
+}
+nav ul {
+  padding: 20px;
+}
+nav li {
+  padding: 10px;
+}
+nav .ducsman {
+  font-family: "Gilda Display", serif;
+  font-size: 1.5rem;
+  color: #aa8453;
+  font-weight: 500;
+}
+nav .catchphrase {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+nav .tel {
+  padding: 25px;
+}
+nav .flaticon-call {
+  color: #aa8453;
+  font-size: 2rem;
+}
+nav .num {
+  color: #aa8453;
+  font-size: 1.2rem;
 }
 
 main {
@@ -255,9 +340,6 @@ body#chambre {
   background-image: url(/img/slider/2.jpg);
   background-position: 100% 58%;
 }
-.Container h2 {
-  font-size: 4em;
-}
 .Container p {
   font-size: 20px;
 }
@@ -287,6 +369,7 @@ body#chambre {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 50px;
+  padding: 150px;
 }
 #article2 p, #article2 h2 {
   grid-column: span 6;
