@@ -2,11 +2,13 @@
 
 
 footer {
+    grid-column-start: 2;
     background-color: $grisClairMoyen;
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
+   
 
 
 h2 {
