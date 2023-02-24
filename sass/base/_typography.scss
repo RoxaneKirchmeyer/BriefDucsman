@@ -12,45 +12,49 @@ $lien : 'Barlow', sans-serif ;
 $annotation : 'Barlow Condensed', sans-serif ; 
 $titre : 'Gilda Display', serif ;
 
-// .headerAnnotation {
-//     font-size:  0.6rem;
-//     color: $blanc;
-//     font-family: $annotation;
-// }
+.headerAnnotation {
+    font-size:  0.6rem;
+    color: $blanc;
+    font-family: $annotation;
+}
 
-// .annotation {
-//     font-family: $annotation;
-//     font-size: 0.6rem;
-//     color: $special;
-// }
+.annotation {
+    font-family: $annotation;
+    font-size: 0.6rem;
+    color: $special;
+}
 
-// h1 {
-//     font-family: $titre;
-//     font-size: 3rem;
-//     color: $blanc;
-// }
+h1 {
+    font-family: $titre;
+    font-size: 3rem;
+    color: $blanc;
+}
 
-// h2 {
-//     font-family: $titre;
-//     font-size: 1.5rem;
-//     color: $blanc;
-// }
+h2 {
+    font-family: $titre;
+    font-size: 1.5rem;
+    color: $blanc;
+}
 
-// h3 {
-//     font-family: $titre;
-//     font-size: 1.3rem;
-//     color: $blanc;
-// }
+h3 {
+    font-family: $titre;
+    font-size: 1.3rem;
+    color: $blanc;
+}
 
-// p {
-//     font-family: $texte;
-//     color: $grisClair;
-//     font-size: 0.6rem;
-// }
+p {
+    font-family: $texte;
+    color: $grisClair;
+    font-size: 0.6rem;
 
-// a {
-//     font-family: $lien;
-// }
+    &.titre-espace {
+        letter-spacing: 5px;
+    }
+}
+
+a {
+    font-family: $lien;
+}
 
 
 
