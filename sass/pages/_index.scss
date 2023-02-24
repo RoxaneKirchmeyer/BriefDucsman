@@ -1,3 +1,108 @@
-.AccueilContainer {
+.Container {
     grid-column-start: 2;
+
+    h2 {
+        font-size: 4em;
+    }
+    
+    p {
+        font-size: 20px;
+    }
 }
+
+#article1 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 5% 45% 20% 25%;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 150px;
+
+    #left-column {
+        padding-top: 150px;
+        align-self: center;
+        grid-column-start: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #image-decale {
+        padding-top: 150px;
+    }
+}
+
+#article2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+
+    p, h2 {
+        grid-column: span 6;
+    }
+
+    #reservation1 {
+        grid-column: span 2;
+        background-image: url("/img/rooms/1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 450px;
+    }
+
+    #reservation2 {
+        grid-column: span 2;
+        background-image: url("/img/rooms/2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 450px;
+    }
+
+    #reservation3 {
+        grid-column: span 2;
+        background-image: url("/img/rooms/3.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 450px;
+    }
+
+    #reservation4 {
+        grid-column: span 3;
+        background-image: url("/img/rooms/4.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    #reservation5 {
+        grid-column: span 3;
+        background-image: url("/img/rooms/7.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+}
+
+#Services {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        width: 690px;
+    }
+}
+
+#option {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    #option2, #option3 {
+        line-height: 30px;
+    }
+}
+

@@ -135,7 +135,7 @@ main {
   grid-column-start: 2;
 }
 
-body {
+body#chambre {
   background-color: #222222;
 }
 
