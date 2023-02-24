@@ -1,3 +1,6 @@
+@import "./vendors/vendor";
+
+
 //base
 @import "./base/reset";
 @import "./base/typography";
@@ -28,12 +31,12 @@
 
 //pages
 @import "./pages/chambres";
-
+@import "pages/contact";
 
 //themes
 @import "./themes/darktheme";
 
 
-//vendors
-@import "./vendors/vendor";
+
+
 

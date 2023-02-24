@@ -3,19 +3,20 @@
 
 footer {
     background-color: $grisClairMoyen;
-    margin: 50px;
-    display: flex;
-    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
 
 h2 {
    color: $blanc;
-   margin-bottom: 10px;
-   font-size: small;
+   margin-bottom: 12px;
+   font-size: large;
 }
 p {
     color: $grisClair;
-    
+    width: 50%;
 
 }
 span {
@@ -31,27 +32,57 @@ li {
     color: $grisClair;
     margin-bottom: 10px;
 }
-   ul { display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+ul {
+    width: 40%;
+     display: flex;
+     justify-content: center;
     
    }
-}
+ 
+   }
+   
+
+
+
  
 .legal {
     height: 100px;
     background-color: $grisFonceMoyen;
     font-size: x-small;
+    
+   
+    
 
 
     ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+   
+
     
 }
 a {
     color: $blanc;
 }
+.text {
+    color: $grisClair;
+}
+
+}
+.contact {
+    margin-left: 90px;
+    display: grid;
+    gap: 10px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+    }    
+}
+.mail {
+    text-decoration: underline;
+    
+    
 }
 
