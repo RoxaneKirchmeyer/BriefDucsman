@@ -39,7 +39,6 @@ header a {
 
 footer {
   background-color: #222222;
-  width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -120,7 +119,8 @@ form div {
 
 body {
   display: grid;
-  grid-template-columns: 20% 85%;
+  max-width: 100%;
+  grid-template-columns: 20% 80%;
 }
 
 nav {
@@ -141,6 +141,83 @@ body#chambre {
 
 .chambre {
   grid-column-start: 2;
+}
+.chambre main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 4fr 1fr;
+}
+.chambre main ul {
+  font-size: 1em;
+}
+.chambre main .nom {
+  color: #aa8453;
+  font-size: 60px;
+}
+.chambre main h2 {
+  margin: 10px 0px 10px 0px;
+  color: #ffffff;
+  font-size: xx-large;
+}
+.chambre main h3 {
+  color: #ffffff;
+  font-size: x-large;
+}
+.chambre main p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #8d8d8d;
+  font-size: large;
+}
+.chambre main li {
+  color: #8d8d8d;
+  margin-bottom: 10px;
+}
+.chambre main .list {
+  display: flex;
+}
+.chambre main .check-in {
+  width: 50%;
+}
+.chambre main .check-in h3 {
+  margin-bottom: 20px;
+}
+.chambre main .check-out {
+  width: 50%;
+}
+.chambre main .check-out h3 {
+  margin-bottom: 20px;
+}
+.chambre main .ti-check {
+  color: #aa8453;
+}
+.chambre main .détails {
+  margin-right: 70px;
+}
+.chambre main button {
+  color: #ffffff;
+  background-color: #2b2b2b;
+  font-size: 8px;
+  border: none;
+  padding: 10px 20px;
+}
+.chambre main span {
+  margin-right: 12px;
+}
+.chambre aside {
+  margin-top: 90px;
+}
+.chambre aside h3 {
+  margin-bottom: 15px;
+}
+.chambre aside li {
+  margin-bottom: 10px;
+}
+.chambre aside span {
+  color: #aa8453;
+  margin-right: 12px;
 }
 .chambre header {
   background-image: url("/img/rooms/4.jpg");
@@ -170,81 +247,115 @@ body#chambre {
   justify-content: center;
 }
 
-main {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 4fr 1fr;
+.Container {
+  grid-column-start: 2;
 }
-main ul {
-  font-size: 1em;
+.Container header {
+  min-height: 90vh;
+  background-image: url(/img/slider/2.jpg);
+  background-position: 100% 58%;
 }
-main .nom {
-  color: #aa8453;
-  font-size: 60pxS;
+.Container h2 {
+  font-size: 4em;
 }
-main h2 {
-  margin: 10px 0px 10px 0px;
-  color: #ffffff;
-  font-size: xx-large;
-}
-main h3 {
-  color: #ffffff;
-  font-size: x-large;
-}
-main p {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  color: #8d8d8d;
-  font-size: large;
-}
-main li {
-  color: #8d8d8d;
-  margin-bottom: 10px;
-}
-main .list {
-  display: flex;
-}
-main .check-in {
-  width: 50%;
-}
-main .check-in h3 {
-  margin-bottom: 20px;
-}
-main .check-out {
-  width: 50%;
-}
-main .check-out h3 {
-  margin-bottom: 20px;
-}
-main .ti-check {
-  color: #aa8453;
-}
-main .détails {
-  margin-right: 70px;
-}
-main button {
-  color: #ffffff;
-  background-color: #2b2b2b;
-  font-size: 8px;
-  border: none;
-  padding: 10px 20px;
-}
-main span {
-  margin-right: 12px;
+.Container p {
+  font-size: 20px;
 }
 
-aside {
-  margin-top: 90px;
+#article1 {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 5% 45% 20% 25%;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 150px;
 }
-aside h3 {
-  margin-bottom: 15px;
+#article1 #left-column {
+  padding-top: 150px;
+  align-self: center;
+  grid-column-start: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-aside li {
-  margin-bottom: 10px;
+#article1 #image-decale {
+  padding-top: 150px;
 }
-aside span {
-  color: #aa8453;
-  margin-right: 12px;
+
+#article2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
+}
+#article2 p, #article2 h2 {
+  grid-column: span 6;
+}
+#article2 #reservation1 {
+  grid-column: span 2;
+  background-image: url("/img/rooms/1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+#article2 #reservation2 {
+  grid-column: span 2;
+  background-image: url("/img/rooms/2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+#article2 #reservation3 {
+  grid-column: span 2;
+  background-image: url("/img/rooms/3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+#article2 #reservation4 {
+  grid-column: span 3;
+  background-image: url("/img/rooms/4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+#article2 #reservation5 {
+  grid-column: span 3;
+  background-image: url("/img/rooms/7.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+#Services {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+#Services img {
+  width: 690px;
+}
+
+#option {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+#option #option2, #option #option3 {
+  line-height: 30px;
+}
+
+#service-en-plus {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+#service-en-plus div {
+  padding: 50px;
 }/*# sourceMappingURL=main.css.map */
