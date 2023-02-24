@@ -193,9 +193,13 @@ nav {
 nav div {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
 }
 nav .ti-star {
   color: #e3a752;
+  text-align: center;
+  fill: #e3a752;
 }
 nav a {
   color: #8d8d8d;
@@ -360,6 +364,13 @@ main iframe {
 
 .infos {
   width: 500px;
+}
+
+.map {
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 a {
