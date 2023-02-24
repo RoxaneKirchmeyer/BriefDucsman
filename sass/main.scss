@@ -1,11 +1,14 @@
-//base
-@import "./base/reset";
-@import "./base/typography";
+//vendors
+@import "./vendors/vendor";
 
 //utils
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/variables";
+
+//base
+@import "./base/reset";
+@import "./base/typography";
 
 
 //components
@@ -27,11 +30,12 @@
 
 //pages
 @import "./pages/chambres";
+@import "./pages/contact";
+@import "./pages/index";
 
 
 //themes
 @import "./themes/darktheme";
 
 
-//vendors
-@import "./vendors/vendor";
+

@@ -86,16 +86,16 @@ body {
   background-color: #222222;
 }
 
-header {
-  background-image: url("/img/rooms/7.jpg");
-  max-width: 100%;
-  height: auto;
-}
-
 h3 {
   color: #ffffff;
 }
 
 p article {
   margin-bottom: 2em;
+}
+
+.header {
+  background-image: url("/img/rooms/7.jpg");
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
