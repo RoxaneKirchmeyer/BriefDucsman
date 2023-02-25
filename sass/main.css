@@ -88,6 +88,7 @@ header a {
 }
 
 footer {
+  grid-column-start: 2;
   background-color: #222222;
   margin: auto;
   display: grid;
@@ -164,7 +165,7 @@ form textarea {
   background-color: #222222;
 }
 form div {
-  padding: 20px;
+  padding: 50px;
 }
 
 body {
@@ -348,11 +349,54 @@ body#chambre {
   justify-content: center;
 }
 
+main {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+main iframe {
+  grid-row-start: 2;
+}
+
+.infos {
+  width: 500px;
+}
+
 .map {
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+a {
+  color: #aa8453;
+  font-size: x-large;
+}
+
+.flaticon-location-pin, .flaticon-envelope, .flaticon-call {
+  color: #aa8453;
+  font-size: 40px;
+  margin: 40px 10px 10px 0px;
+}
+
+.text {
+  color: #8d8d8d;
+}
+
+.call, .email, .adresse {
+  display: inline-flex;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+form #message {
+  grid-column: span 2;
 }
 
 .Container {

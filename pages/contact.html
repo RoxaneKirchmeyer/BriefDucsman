@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sass/main.css">
-    <link rel="stylesheet" href="css/flaticons.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="../css/flaticons.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Gilda+Display&display=swap"
         rel="stylesheet">
@@ -54,42 +54,58 @@
 
   
 
+
     <main>
-        <div class="contactez">
-            <div>
-                <h3> Ducsman</h3>
-                <p>Nous sommes à votre disposition pour toute question relative a votre séjour</p>
-                <p>ou pour vos préparer le plus luxueux des voyages.</p>
+        <div class="infos">
 
-                <ul>
-                    <p>informations & Reservation</p>
-                    <span class="flaticon-call"></span>
+            <h3> Ducsman</h3>
+            <p>Nous sommes à votre disposition pour toute question relative a votre séjour
+                ou pour vous préparer le plus luxueux des voyages.</p>
+            <div class="call">
+                <span class="flaticon-call"></span>
+                <div>
+                    <p>Informations & Reservation</p>
                     <a href="#">03 20 01 02 03 </a>
-                    <span class="flaticon-envelope"></span>
+                </div>
+            </div><br>
+            <div class="email">
+                <span class="flaticon-envelope"></span>
+                <div>
                     <p>E-mail</p>
-                    <a href="#">Info@Ducsman-group.com</a>
+                    <a href="#">info@ducsman-group.com</a>
+                </div>
+            </div><br>
+            <div class="adresse">
+                <span class="flaticon-location-pin"></span>
+            
+                <div>
                     <p>Adresse</p>
-                    <span class="flaticon-location-pin"></span>
-                    <a href="#"></a><span>23avenue des Nations Unies<br>75001 Paris </span>
-
-
-                </ul>
+                    <a href="#"></a><span class="text">23avenue des Nations Unies<br>75001 Paris</span>
+                </div>
             </div>
 
 
-            <div>
-                <form>
-                    <h3>Restons en contact</h3>
-                    <div><input type="text" placeholder="Votre nom *"></div>
-                    <div><input type="email" placeholder="Votre e-mail *"></div>
-                    <div><input type="tel" placeholder="Votre numéro de téléphone *"></div>
-                    <div><input type="text" placeholder="Sujet *"></div>
-                    <div><textarea name="" id="" cols="30" rows="10" placeholder="Message *"></textarea></div>
-                    <div><button type="submit">ENVOYER</button></div>
-                </form>
-            </div>
         </div>
 
+
+        <div>
+            <h3>Restons en contact</h3>
+            <form>
+                <div><input type="text" placeholder="Votre nom *"></div>
+                <div><input type="email" placeholder="Votre e-mail *"></div>
+                <div><input type="tel" placeholder="Votre numéro de téléphone *"></div>
+                <div><input type="text" placeholder="Sujet *"></div>
+                <div><textarea name="message" id="message" cols="30" rows="10" placeholder="Message *"></textarea>
+                </div>
+                
+            </form>
+            <button type="submit" id="envoyer">ENVOYER</button>
+        </div>
+
+
+
+
+      
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8504121343435!2d2.289137215881831!3d48.8610628084723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe30b11cf5f%3A0x1defd6b5159c5706!2s128%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1677141479764!5m2!1sfr!2sfr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
@@ -97,6 +113,8 @@
 
 
     </main>
+
+
 
     <footer>
 
