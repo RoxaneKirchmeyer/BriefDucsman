@@ -41,4 +41,10 @@ form {
 }
 
 @media screen and (max-width:391px) {
+    form {
+        justify-content: center;
+        .formInput {
+            width: 100%;
+        }
+    }
 }

@@ -109,8 +109,9 @@ header {
             width: 100%;
         }
 
-        .header {
+        .header, .headerChambre {
             min-height: 50vh;
+            background-position: center;
         }
     }
 
