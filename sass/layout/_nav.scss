@@ -82,3 +82,10 @@ nav {
     }
   }
 }
+
+@media screen and (max-width:391px) {
+  nav {
+    display: none;
+  }
+    
+}

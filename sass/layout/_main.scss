@@ -5,3 +5,27 @@ main {
     box-sizing: border-box;
     background-color: $grisClairMoyen;
 }
+
+@media screen and (max-width:391px) {
+    .index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        article {
+
+            h2,
+            h3 {
+                text-align: center;
+            }
+
+            .gridContainer {
+                display: block;
+
+                section {
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
