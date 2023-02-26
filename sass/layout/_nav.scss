@@ -1,64 +1,84 @@
 // nav
 
 nav {
-    width: 20%;
-    background-color: $grisFonce;
-    min-height: 100%;
-    grid-row: span 3;
-    position: fixed;
+  width: 20%;
+  background-color: $grisFonce;
+  min-height: 100vh;
+  position: fixed;
 
+  .logo {
+    display: block;
+    text-align: center;
+    margin-top: 2.5rem;
 
-        div {
-            text-align: center;
-            margin-top: 20px;
-        }
-
+    .star {
+        display: block;
 
         .ti-star {
             color: $jauneEtoile;
             text-align: center;
-            fill: $jauneEtoile;
-        }
+            font-size: 0.5rem;
+      }
+    }
 
+    .ducsman {
+        font-family: $fontTitre;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        margin-top: 0.5rem;
+        color: $special;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+    }
+
+    .catchphrase {
+        display: block;
+        color: $blanc;
+        font-size: 0.75rem;
+        font-weight: 300;
+        letter-spacing: 4px;
+    }
+  }
+
+  ul {
+    margin: auto;
+    width: 80%;
+    margin-top: 4rem;
     
+    li {
+        margin: 1rem 0;
         a {
             color: $grisClair;
-            margin-bottom: 20px;
+            font-size: 1rem;
         }
-        ul {
-            padding: 20px;
-        }
+    }
+  }
 
-        li {
-            padding: 10px;
-        }
-   
-        .ducsman {
-            font-family: $titre;
-            font-size: 1.5rem;
-            color: $special;
-            font-weight: 500;
-        }
+  .tel {
+    margin: auto;
+    margin-top: 4rem;
+    width: 80%;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
 
-        .catchphrase {
-            color: $blanc;
-            font-size: 0.8rem;
-            font-weight: 300;
-            letter-spacing: 2px;
-            
-        }
-
-        .tel {
-            padding: 25px;
-        }
-
-        .flaticon-call {
-            color: $special;
-            font-size: 2rem;
-        }
-
-        .num {
-            color: $special;
-            font-size: 1.2rem;
-        }
+    .flaticon-call {
+        color: $special;
+        font-size: 2rem;
+        width: 20%;
+    }
+    
+    .telText{
+        color: $texte;
+        font-size: 1rem;
+    }
+    .num {
+        color: $special;
+        font-size: 1.25rem;
+        font-family: $fontAnnotation;
+    }
+  }
 }

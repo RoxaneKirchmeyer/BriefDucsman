@@ -1,55 +1,127 @@
-main {
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    margin-top: 100px;
-    margin-left: 100px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
-    grid-template-rows: 2fr 1fr 1fr;
-    
-    iframe {
-        grid-row-start: 2;
+    section {
+        width: 45%;
 
+        h3 {
+            color: $blanc;
+            font-family: $fontTitre;
+            letter-spacing: 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .tel {
+            margin: 2.5rem 0;
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .flaticon-call,
+            .flaticon-envelope,
+            .flaticon-location-pin {
+                color: $special;
+                font-size: 2.25rem;
+            }
+
+            .telText {
+                display: block;
+                color: $texte;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .num {
+                font-family: $fontAnnotation;
+                color: $special;
+                font-size: 1.5rem;
+            }
+        }
     }
-
-    
-}
-
-.infos {
-    width: 500px;
-}
-
-.map {
-    -webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
-}
-
-a {
-    color: $marron;
-    font-size: x-large;
-}
-.flaticon-location-pin, .flaticon-envelope, .flaticon-call {
-    color: $marron;
-    font-size: 40px;
-    margin: 40px 10px 10px 0px ;
-    
- }
-    
- .text {
-    color: $grisClair;
- }
- .call, .email, .adresse {
-    display: inline-flex;
- }
-form {
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    #message {
-        grid-column: span 2;
+    .map {
+        width: 100%;
+        filter: grayscale(100%);
+        margin-top: 6rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+// main {
+
+//     margin-top: 100px;
+//     margin-left: 100px;
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+
+//     grid-template-rows: 2fr 1fr 1fr;
+
+//     iframe {
+//         grid-row-start: 2;
+
+//     }
+
+
+// }
+
+// .infos {
+//     width: 500px;
+// }
+
+// .map {
+//     -webkit-filter: grayscale(100%);
+//        -moz-filter: grayscale(100%);
+//         -ms-filter: grayscale(100%);
+//          -o-filter: grayscale(100%);
+//             filter: grayscale(100%);
+// }
+
+// a {
+//     color: $marron;
+//     font-size: x-large;
+// }
+// .flaticon-location-pin, .flaticon-envelope, .flaticon-call {
+//     color: $marron;
+//     font-size: 40px;
+//     margin: 40px 10px 10px 0px ;
+
+//  }
+
+//  .text {
+//     color: $grisClair;
+//  }
+//  .call, .email, .adresse {
+//     display: inline-flex;
+//  }
+// form {
+
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     #message {
+//         grid-column: span 2;
+//     }
+// }

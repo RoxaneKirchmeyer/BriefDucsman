@@ -1,89 +1,71 @@
 // footer    
-
-
-footer {
-    grid-column-start: 2;
+footer{
     background-color: $grisClairMoyen;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-   
+    width: 80%;
+    margin-left: 20%;
 
-
-h2 {
-   color: $blanc;
-   margin-bottom: 12px;
-   font-size: large;
-}
-p {
-    color: $grisClair;
-    width: 50%;
-
-}
-span {
-    color: $blanc ;
-}
-p span {
-    color: $blanc;
-}
-a {
-    color: $blanc;
-}
-li {
-    color: $grisClair;
-    margin-bottom: 10px;
-}
-ul {
-    width: 40%;
-     display: flex;
-     justify-content: center;
-    
-   }
- 
-   }
-   
-
-
-
- 
-.legal {
-    height: 100px;
-    background-color: $grisFonceMoyen;
-    font-size: x-small;
-    
-   
-    
-
-
-    ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-
-    
-}
-a {
-    color: $blanc;
-}
-.text {
-    color: $grisClair;
-}
-
-}
-.contact {
-    margin-left: 90px;
-    display: grid;
-    gap: 10px;
-    ul {
+    .apropos{
         display: flex;
         justify-content: space-between;
+        padding: 5rem;
+        .contactFooter{
+            max-width: 30%;
+        }
+        section{
+            width: 50%;
+            h2{
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                margin: 0;
 
-    }    
-}
-.mail {
-    text-decoration: underline;
-    
-    
-}
+                line-height: 1.5;
+            }
+            a{
+                color: $blanc;
+                font-size: 1.5rem;
+                font-family: $fontTitre;
+                margin: 1.25rem 0;
+                display: block;
+            }
+            .mail{
+                display: block;
+                font-family: $fontTexte;
+                font-size: 1rem;
+                border-bottom: 1px Solid $special;
+                margin-bottom: 0.25rem;
+                width: 140px;
+            }
+            ul{
+                display: flex;
+                gap: 1rem;
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
 
+      
+    }
+    .legal{
+        background-color: $grisFonceMoyen;
+        ul{
+            text-align: center;
+            padding: 2rem;
+        }
+        a{
+            color: $blanc;
+            font-size: 0.75rem;
+            span{
+                color: $grisClair;
+            }
+        }
+        li{
+            display: inline;
+            color: $grisClair;
+            font-family:$fontTexte ;
+            font-size: 0.75rem;
+        }
+    }
+}
