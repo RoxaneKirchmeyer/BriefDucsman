@@ -5,6 +5,7 @@ nav {
   background-color: $grisFonce;
   min-height: 100vh;
   position: fixed;
+  display: block;
 
   .logo {
     display: block;
@@ -87,8 +88,8 @@ nav {
 }
 
 @media screen and (max-width:391px) {
-  nav {
+  nav{
     display: none;
   }
-    
+  
 }
