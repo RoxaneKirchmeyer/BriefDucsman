@@ -97,6 +97,14 @@ input, textarea {
     top: 60px;
   }
 }
+<<<<<<< HEAD
+=======
+@media screen and (min-width: 1201px) {
+  #btn-burger {
+    display: none;
+  }
+}
+>>>>>>> c6da2c3f67c7e665b72a8307134a9f9003bca894
 @media screen and (max-width: 391px) {
   aside {
     margin: 0;
