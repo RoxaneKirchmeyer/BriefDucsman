@@ -1,2 +1,35 @@
 // menu burger
+@media screen and (max-width:391px) {
+    body {
+        position: relative;  
+        /* tu es un point de repère */
+    }
+    
+    #btn-burger {
+        font-size: 3em;
+        line-height: 60px;
+        color: $blanc;
+        background-color: $special;
+        width: 3rem;
+    }
+    
+    .main-nav-burger {
+        display: none;
+    }
+    
+    .main-nav-burger.visible {
+        display: block;
+        position: absolute;
+        /* tu te place en fonction du point de repère */
+        width: 100%;
+        max-width: 300px;
+        background-color:$grisFonceMoyen;
+        top: 60px;
+    }
+}
+@media screen and (min-width:1201px) {
+    #btn-burger {
+        display: none;
+    }
+}
 
