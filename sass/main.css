@@ -157,6 +157,7 @@ footer .apropos section ul a {
 }
 footer .apropos section ul a:hover {
   color: #aa8453;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 footer .legal {
   background-color: #1e1e1e;
@@ -171,6 +172,7 @@ footer .legal a {
 }
 footer .legal a:hover {
   color: #aa8453;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 footer .legal a span {
   color: #8d8d8d;
@@ -268,6 +270,7 @@ form button {
 }
 form button:hover {
   background-color: #3b3b3b;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media screen and (max-width: 391px) {
@@ -318,6 +321,7 @@ form button:hover {
 }
 .grid .services div a:hover {
   background-color: #3b3b3b;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .grid .options {
   display: flex;
@@ -545,9 +549,7 @@ header .headerChambre .chambres a {
 }
 header .header .chambres a:hover,
 header .headerChambre .chambres a:hover {
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  left: 0;
-  right: 100%;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: #ffffff;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -711,6 +713,7 @@ main {
 
 .details a:hover {
   background-color: #aa8453;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media screen and (max-width: 391px) {
