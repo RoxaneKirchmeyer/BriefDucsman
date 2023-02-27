@@ -1,103 +1,204 @@
-body {
-    background-color: $grisClair;
+.chambre {
+    display: flex;
+   justify-content: space-between;
+   gap: 10%;
 }
 
-
-header {
-    background-image: url("/img/rooms/4.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 400px;
+.details {
+    width: 70%;
+    background-color: $grisClairMoyen;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    p {
-        color: $blanc;
-        letter-spacing: 3px;
-        margin: 14px;
-    }
-    h1 {
-        letter-spacing: 4px;
-    }
-    
-    
-}
-main{
-    width: 80%;
-    margin:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: xx-small;
-
-     .nom{
-    color: $marron;
-        
-    }
-
-    h2 {
-    margin: 10px 0px 10px 0px;
-    }
-
 
     h3 {
-    color: $blanc;
-    font-size: small;
-   
-   
-  
+        order: -1;
     }
+
     p {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    
-
+        line-height: 1.5;
     }
-    li {
-    color: $grisClair;
-    margin-bottom: 10px;
 
-    
-   
-  
-    } 
     .list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
 
-    
+        .check {
+            width: auto;
 
-    
-    } 
+            li {
+                color: $grisClair;
+                font-family: $fontTexte;
+                line-height: 2.5;
 
-    .détails {
-    margin-right: 70px;
-    
-    
+                span {
+                    color: $special;
+                    padding-right: 0.75rem;
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
     }
-    button {
+
+    a {
+        width: 185px;
+        background-color: $grisButton;
         color: $blanc;
-        background-color: $grisClair;
-        font-size: 8px;
-        border: none;
-        padding: 10px 20px;
-        
+        font-family: $fontAnnotation;
+        letter-spacing: 3px;
+        padding: 0.75rem 1rem;
+        margin: 1rem 0;
     }
 }
-aside {
-    margin-top: 90px;
 
-    h3{
-        margin-bottom: 15px;
-    }
+aside {
+    margin-top: 6rem;
+    width: 20%;     
     li {
-        margin-bottom: 10px;
-        
+        color: $grisClair;
+        font-family: $fontTexte;
+        line-height: 2.5;
+
+        span {
+            color: $special;
+            padding-right: 0.75rem;
+        }
     }
 }
+
+
+//         ul{
+//             font-size: 1em;
+//         }
+
+//         .nom {
+//             color: $marron;
+//             font-size: 60px;
+
+//         }
+
+//         h2 {
+//             margin: 10px 0px 10px 0px;
+//             color: $blanc;
+//             font-size: xx-large;
+//         }
+
+
+//         h3 {
+//             color: $blanc;
+//             font-size: x-large;
+
+
+
+//         }
+
+//         p {
+//             margin-top: 20px;
+//             margin-bottom: 15px;
+//             color: $grisClair;
+//             font-size: large;
+
+
+//         }
+
+//         li {
+//             color: $grisClair;
+//             margin-bottom: 10px;
+
+
+//         }
+
+//         .list {
+//             display: flex;
+//         }
+//         .check-in {
+//             width: 50%;
+//             h3 {
+//                 margin-bottom: 20px;
+//             }
+//         }
+//         .check-out {
+//             width: 50%;
+//             h3 {
+//             margin-bottom: 20px;
+//         }
+//          }
+//          .ti-check {
+//             color: $marron;
+//         }
+//         .détails {
+//             margin-right: 70px;
+//         }
+
+//         button {
+//             color: $blanc;
+//             background-color: $gris;
+//             font-size: 8px;
+//             border: none;
+//             padding: 10px 20px;
+
+//         }
+//         span {
+//             margin-right: 12px;
+//         }
+//     }
+
+//     aside {
+//         width: 20%;
+//         margin-top: 90px;
+
+//         h3 {
+//             margin-bottom: 15px;
+//         }
+
+//         li {
+//             margin-bottom: 10px;
+
+
+
+//         }
+//         span {
+//             color: $marron;
+//             margin-right: 12px;
+//         }
+//     }
+
+
+//     header {
+//         background-image: url("/img/rooms/4.jpg");
+//         background-position: top;
+//         background-size: auto;
+//         background-repeat: no-repeat;
+//         width: auto;
+
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+
+//         p {
+//             color: $blanc;
+//             letter-spacing: 5px;
+//             margin: 14px;
+//         }
+
+//         h1 {
+//             letter-spacing: 20px;
+//             color: $blanc;
+//             font-size: 70px;
+//         }
+
+//         ul {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//         }
+
+
+//     }
+// }

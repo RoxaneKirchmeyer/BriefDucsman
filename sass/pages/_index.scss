@@ -1,3 +1,251 @@
-.AccueilContainer {
-    grid-column-start: 2;
+.index {
+
+    background-color: $grisFonceMoyen;
+    
+    article {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            order: -1;
+        }
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 1rem;
+        gap: 1.75rem;
+
+        section {
+            background-size: cover;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a,
+            span {
+                color: $blanc;
+            }
+
+            .reservation {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                margin: 1rem;
+                align-self: flex-end;
+                font-family: $fontAnnotation;
+                letter-spacing: 2px;
+                border: 1px Solid rgba(255, 255, 255, 0.5);
+                padding: 0.75rem 0.25rem;
+            }
+
+            .gridLegend {
+                display: flex;
+                flex-direction: column;
+                margin: 1.25rem;
+                a{
+                    margin: 0.5rem 0;
+                    font-family:$fontTitre;
+                    font-size: 1.5rem;                }
+                .price{
+                    font-family: $fontAnnotation;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                }
+                
+            hr {
+                border: 1px Solid rgba(255, 255, 255, 0.5);
+                max-width: 3.25rem;
+                margin: 0;
+            }
+            }
+            .invisible{
+                visibility: hidden;
+                height: 0;
+            }
+        }
+
+        .reservation1 {
+            grid-column: span 2;
+            background-image: url("/img/rooms/1.jpg");
+        }
+
+        .reservation2 {
+            grid-column: span 2;
+            background-image: url("/img/rooms/2.jpg");
+        }
+
+        .reservation3 {
+            grid-column: span 2;
+            background-image: url("/img/rooms/3.jpg");
+        }
+
+        .reservation4 {
+            grid-column: span 3;
+            height: 325px;
+            background-image: url("/img/rooms/4.jpg");
+        }
+
+        .reservation5 {
+            grid-column: span 3;
+            height: 325px;
+            background-image: url("/img/rooms/7.jpg");
+        }
+    }
 }
+
+
+
+
+
+
+// .Container {
+//     grid-column-start: 2;
+
+//     header {
+//         min-height: 90vh;
+//         background-image: url(/img/slider/2.jpg);
+//         background-position: 100% 58%;
+//     }
+
+//     p {
+//         font-size: 20px;
+//         color: $grisClair;
+
+//         &.titre-espace {
+//             color: $marron;
+//             letter-spacing: 5px;
+//         }
+//     }
+
+//     section {
+//         background-color: $grisClairMoyen;
+//     }
+// }
+
+// #article1 {
+//     background-color: $gris;
+//     height: 70vh;
+//     display: grid;
+//     grid-template-columns: 5% 45% 20% 25%;
+//     align-items: center;
+//     gap: 30px;
+
+//     #left-column {
+//         padding-top: 150px;
+//         align-self: center;
+//         grid-column-start: 2;
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 40px;
+//     }
+
+//     #image-decale {
+//         padding-top: 150px;
+//     }
+// }
+
+// #article2 {
+//     padding: 150px;
+//     padding-bottom: 100px;
+//     background-color: $grisClairMoyen;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     gap: 50px;
+//     padding: 150px;
+
+//     p, h2 {
+//         grid-column: span 6;
+//     }
+
+//     #reservation1 {
+//         grid-column: span 2;
+//         background-image: url("/img/rooms/1.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         height: 450px;
+//     }
+
+//     #reservation2 {
+//         grid-column: span 2;
+//         background-image: url("/img/rooms/2.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         height: 450px;
+//     }
+
+//     #reservation3 {
+//         grid-column: span 2;
+//         background-image: url("/img/rooms/3.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         height: 450px;
+//     }
+
+//     #reservation4 {
+//         grid-column: span 3;
+//         background-image: url("/img/rooms/4.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         height: 400px;
+//     }
+
+//     #reservation5 {
+//         grid-column: span 3;
+//         background-image: url("/img/rooms/7.jpg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         height: 400px;
+//     }
+// }
+
+// #Services {
+//     padding: 100px 50px 50px 100px;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+
+//     #Service1, #Service2, #Service3, #Service4 {
+//         height: 89.3%;
+//         background-color: $gris;
+//         padding: 25px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//     }
+
+//     h3 {
+//         font-size: 2.5em;
+//     }
+
+//     img {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+// #option {
+//     height: 50vh;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     align-items: center;
+//     justify-items: center;
+
+//     #option2, #option3 {
+//         line-height: 30px;
+//     }
+// }
+
+// #service-en-plus {
+//     height: 40vh;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     row-gap: 50px;
+//     justify-items: center;
+//     align-items: center;
+
+//     div {
+//         padding: 50px;
+//     }
+// }
