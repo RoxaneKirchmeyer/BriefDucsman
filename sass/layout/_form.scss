@@ -18,7 +18,14 @@ form {
         background-color: $grisClairMoyen;
         line-height: 2;
         width: 100%;
+            &:focus{
+                outline: none;
+                background-color: $grisButton;
+                &::placeholder{
+                    color: $special;
+                }
     }
+}
 
     .formTextarea{
         width: 100%;
@@ -28,6 +35,13 @@ form {
         border-style: none none solid none;
         background-color: $grisClairMoyen;
         width: 100%;
+            &:focus{
+                outline: none;
+                background-color: $grisButton;
+                &::placeholder{
+                    color: $special;
+                }
+            }
     }
 
     button {
@@ -37,8 +51,13 @@ form {
         font-family: $fontAnnotation;
         letter-spacing: 3px;
         padding: 0.75rem 1rem;
+        border: none;
+            &:hover{
+                background-color: $grisButton;
+            }
     }
 }
+
 
 @media screen and (max-width:391px) {
     form {

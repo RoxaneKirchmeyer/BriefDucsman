@@ -5,6 +5,7 @@ nav {
   background-color: $grisFonce;
   min-height: 100vh;
   position: fixed;
+  display: block;
 
   .logo {
     display: block;
@@ -51,6 +52,9 @@ nav {
         a {
             color: $grisClair;
             font-size: 1rem;
+            &:hover {
+              color: $special;
+            }
         }
     }
   }
@@ -84,8 +88,8 @@ nav {
 }
 
 @media screen and (max-width:391px) {
-  nav {
+  nav{
     display: none;
   }
-    
+  
 }
