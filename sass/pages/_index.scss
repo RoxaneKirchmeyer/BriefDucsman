@@ -54,52 +54,37 @@
     padding: 150px;
     padding-bottom: 100px;
     background-color: $grisClairMoyen;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 50px;
 
-    p, h2 {
-        grid-column: span 6;
-    }
+    .article2-container {
+        gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-    #reservation1 {
-        grid-column: span 2;
-        background-image: url("/img/rooms/1.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
+        img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
 
-    #reservation2 {
-        grid-column: span 2;
-        background-image: url("/img/rooms/2.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
+        figure {
+            position: relative;
 
-    #reservation3 {
-        grid-column: span 2;
-        background-image: url("/img/rooms/3.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 450px;
-    }
+            .reserver {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                writing-mode: vertical-rl;
+                color: $blanc;
+                padding: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+        }
 
-    #reservation4 {
-        grid-column: span 3;
-        background-image: url("/img/rooms/4.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
-    }
-
-    #reservation5 {
-        grid-column: span 3;
-        background-image: url("/img/rooms/7.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
+        figcaption {
+            overflow: hidden;
+            position: absolute;
+            inset: 200px 0 0 0;
+        }
     }
 }
 
