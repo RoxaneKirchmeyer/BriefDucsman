@@ -1,61 +1,56 @@
-// box-sizing: border-box;
 // Applications des couleurs globales du site
 // boilerplate ?
-$titre : $blanc;
-$button : $marronButton;
-$texte : $grisClair;
-$special : $marron;
-
-
-$texte : 'Barlow', sans-serif ;
-$lien : 'Barlow', sans-serif ;
-$annotation : 'Barlow Condensed', sans-serif ; 
-$titre : 'Gilda Display', serif ;
-
-.headerAnnotation {
-    font-size:  0.6rem;
-    color: $blanc;
-    font-family: $annotation;
-}
-
-.annotation {
-    font-family: $annotation;
-    font-size: 0.6rem;
-    color: $special;
-}
 
 h1 {
-    font-family: $titre;
-    font-size: 3rem;
+    font-family: $fontTitre;
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
     color: $blanc;
 }
 
 h2 {
-    font-family: $titre;
-    font-size: 1.5rem;
+    font-family: $fontTitre;
+    font-size: 2.5rem;
     color: $blanc;
 }
 
 h3 {
-    font-family: $titre;
-    font-size: 1.3rem;
-    color: $blanc;
+    font-family: $fontAnnotation;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    margin: 1rem 0;
+    color: $special;
 }
 
-p {
-    font-family: $texte;
-    color: $grisClair;
-    font-size: 0.6rem;
+h4 {
+    font-family: $fontTitre;
+    font-size: 1.5rem;
+    color: $blanc;
+    margin: 1rem 0 0.5rem 0;
+}
 
-    &.titre-espace {
-        letter-spacing: 5px;
-    }
+p{
+    font-family: $fontTexte;
+    color: $texte;
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 
 a {
-    font-family: $lien;
+    font-family: $fontLien;
 }
 
+input, textarea{
+    font-family: $fontTexte;
+    color: $texte;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:391px) {
+body {
+    background-color: #222222;
+}
+}
 
 
 

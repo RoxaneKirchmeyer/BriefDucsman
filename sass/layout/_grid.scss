@@ -1,7 +1,258 @@
 // mise en page en grille (min 2x2)
 
-body {
-    display: grid;
-    max-width :100%;
-    grid-template-columns: 20% 80%;
+.grid {
+    width: 80%;
+    margin-left: 20%;
+    background-color: $grisClairMoyen;
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem 5rem 6rem 5rem;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            background-color: $gris;
+            padding: 3rem 2rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                order: -1;
+                margin: 0.5rem 0;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+
+            a {
+                width: 130px;
+                background-color: $marronButton;
+                color: $blanc;
+                font-family: $fontAnnotation;
+                letter-spacing: 3px;
+                padding: 0.75rem 1.25rem;
+            }
+        }
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 90%;
+        padding-top: 2rem;
+
+        article {
+            max-width: 25%;
+
+            h2 {
+                font-size: 2.75rem;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+
+            .tel {
+                margin-top: 1.5rem;
+
+                .infos {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                .flaticon-call {
+                    color: $special;
+                    font-size: 2rem;
+                }
+
+                .telText {
+                    display: block;
+                    color: $texte;
+                    font-size: 1rem;
+                }
+
+                .num {
+                    font-family: $fontAnnotation;
+                    color: $special;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .option {
+            background-color: $gris;
+            padding: 3rem;
+
+            h3 {
+                color: $blanc;
+                font-family: $fontTitre;
+                letter-spacing: 0;
+                font-size: 1.5rem;
+            }
+
+            p span {
+                font-size: 2.5rem;
+                font-family: $fontTitre;
+                color: $special;
+
+            }
+
+            p,
+            li {
+                color: $texte;
+                font-family: $fontTexte;
+            }
+
+            li span {
+                color: $special;
+                margin-right: 1rem;
+                line-height: 2;
+            }
+
+            .ti-close {
+                color: $texte;
+            }
+        }
+    }
+
+    .services-plus {
+        padding: 9rem 5rem 6rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        h2 {
+            grid-column: span 3;
+        }
+
+        article {
+            border: 1px Solid rgba(255, 255, 255, 0.05);
+            padding: 1rem 1.75rem 1rem 1rem;
+
+            span {
+                color: $special;
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                color: $titre;
+                font-family: $fontTitre;
+                letter-spacing: 0;
+                font-size: 1.25rem;
+            }
+
+            p {
+                line-height: 1.5;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+    .grid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        .services {
+            display: flex;
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+
+            div {
+                max-width: 375px;
+                text-align: center;
+
+                a {
+                    width: auto;
+                }
+            }
+
+            .imgService1 {
+                order: 1;
+            }
+
+            .service1 {
+                order: 2;
+            }
+
+            .imgService2 {
+                order: 3;
+            }
+
+            .service2 {
+                order: 4;
+            }
+
+            .imgService3 {
+                order: 5;
+            }
+
+            .service3 {
+                order: 6;
+            }
+
+            .imgService4 {
+                order: 7;
+            }
+
+            .service4 {
+                order: 8;
+            }
+
+        }
+
+        .options {
+            width: 100%;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            article {
+                max-width: 100%;
+                text-align: center;
+
+                .tel {
+                    padding-bottom: 1rem;
+
+                    a {
+                        justify-content: center;
+                    }
+                }
+            }
+            .option {
+                padding: 2rem;
+            }  
+        }
+        .services-plus {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            align-items: center;
+            article {
+                text-align: center;
+            }
+        }
+
+    }
 }

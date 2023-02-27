@@ -1,1 +1,144 @@
 // header
+
+header {
+    width: 80%;
+    margin-left: 20%;
+
+    h1 {
+        width: 60%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .star {
+        display: block;
+
+        .ti-star {
+            color: $jauneEtoile;
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+
+    .header {
+        background-image: url("../../img/slider/2.jpg");
+    }
+
+    .headerChambre {
+        background-image: url("../../img/rooms/5.jpg");
+    }
+
+    .header,
+    .headerChambre {
+        background-size: cover;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .h2header {
+            font-family: $fontAnnotation;
+            letter-spacing: 6px;
+            font-size: 1rem;
+            margin: 1.5rem;
+        }
+
+        .chambres {
+            order: -1;
+            margin-top: 2rem;
+
+            a {
+                color: $blanc;
+                letter-spacing: 2px;
+                display: block;
+                border: 1px Solid rgba(255, 255, 255, 0.5);
+                padding: 0.75rem 1.25rem;
+                font-family: $fontAnnotation;
+            }
+        }
+    }
+
+    article {
+        padding: 0 5rem;
+        background-color: $grisClairMoyen;
+        display: flex;
+        gap: 1.5rem;
+
+        section {
+            width: 55%;
+            padding: 4rem 0 10rem 0;
+            display: flex;
+            flex-direction: column-reverse;
+
+            p {
+                order: -2;
+                line-height: 1.5;
+            }
+
+            .bienvenue {
+                order: -1;
+            }
+        }
+
+        .imagePresentation {
+            padding: 5rem 0;
+            display: flex;
+            gap: 1.5rem;
+
+            img {
+                width: 200px;
+                height: 275px;
+            }
+
+            .imagedecale {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:391px) {
+
+    header {
+        width: 100%;
+        margin: 0;
+
+        h1 {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+
+        .header, .headerChambre {
+            min-height: 50vh;
+            background-position: center;
+        }
+    }
+
+    header article {
+        flex-direction: column;
+        padding: 0 2rem;
+
+        section {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        .imagePresentation {
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: 350px;
+            }
+
+            .imagedecale {
+                align-self: center;
+            }
+        }
+    }
+}
