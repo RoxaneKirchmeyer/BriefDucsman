@@ -51,6 +51,9 @@ nav {
         a {
             color: $grisClair;
             font-size: 1rem;
+            &:hover {
+              color: $special;
+            }
         }
     }
   }
