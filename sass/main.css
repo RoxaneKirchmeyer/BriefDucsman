@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,6 +73,31 @@ input, textarea {
   }
 }
 @media screen and (max-width: 391px) {
+  body {
+    position: relative;
+    /* tu es un point de repère */
+  }
+  #btn-burger {
+    font-size: 3em;
+    line-height: 60px;
+    color: #ffffff;
+    background-color: #aa8453;
+    width: 3rem;
+  }
+  .main-nav-burger {
+    display: none;
+  }
+  .main-nav-burger.visible {
+    display: block;
+    position: absolute;
+    /* tu te place en fonction du point de repère */
+    width: 100%;
+    max-width: 300px;
+    background-color: #1e1e1e;
+    top: 60px;
+  }
+}
+@media screen and (max-width: 391px) {
   aside {
     margin: 0;
     min-width: 100%;
@@ -124,6 +150,9 @@ footer .apropos section ul {
 footer .apropos section ul a {
   font-size: 1rem;
 }
+footer .apropos section ul a:hover {
+  color: #aa8453;
+}
 footer .legal {
   background-color: #1e1e1e;
 }
@@ -134,6 +163,9 @@ footer .legal ul {
 footer .legal a {
   color: #ffffff;
   font-size: 0.75rem;
+}
+footer .legal a:hover {
+  color: #aa8453;
 }
 footer .legal a span {
   color: #8d8d8d;
@@ -191,6 +223,16 @@ form input {
   line-height: 2;
   width: 100%;
 }
+form input:focus {
+  outline: none;
+  background-color: #3b3b3b;
+}
+form input:focus::-moz-placeholder {
+  color: #aa8453;
+}
+form input:focus::placeholder {
+  color: #aa8453;
+}
 form .formTextarea {
   width: 100%;
 }
@@ -200,6 +242,16 @@ form textarea {
   background-color: #222222;
   width: 100%;
 }
+form textarea:focus {
+  outline: none;
+  background-color: #3b3b3b;
+}
+form textarea:focus::-moz-placeholder {
+  color: #aa8453;
+}
+form textarea:focus::placeholder {
+  color: #aa8453;
+}
 form button {
   width: 100px;
   background-color: #ab8a62;
@@ -207,6 +259,10 @@ form button {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 3px;
   padding: 0.75rem 1rem;
+  border: none;
+}
+form button:hover {
+  background-color: #3b3b3b;
 }
 
 @media screen and (max-width: 391px) {
@@ -254,6 +310,9 @@ form button {
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 3px;
   padding: 0.75rem 1.25rem;
+}
+.grid .services div a:hover {
+  background-color: #3b3b3b;
 }
 .grid .options {
   display: flex;
@@ -479,6 +538,14 @@ header .headerChambre .chambres a {
   padding: 0.75rem 1.25rem;
   font-family: "Barlow Condensed", sans-serif;
 }
+header .header .chambres a:hover,
+header .headerChambre .chambres a:hover {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  left: 0;
+  right: 100%;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
+}
 header article {
   padding: 0 5rem;
   background-color: #222222;
@@ -552,6 +619,7 @@ nav {
   background-color: #1b1b1b;
   min-height: 100vh;
   position: fixed;
+  display: block;
 }
 nav .logo {
   display: block;
@@ -595,6 +663,9 @@ nav ul li a {
   color: #8d8d8d;
   font-size: 1rem;
 }
+nav ul li a:hover {
+  color: #aa8453;
+}
 nav .tel {
   margin: auto;
   margin-top: 4rem;
@@ -631,6 +702,10 @@ main {
   padding: 3rem 5rem 6rem 5rem;
   box-sizing: border-box;
   background-color: #222222;
+}
+
+.details a:hover {
+  background-color: #aa8453;
 }
 
 @media screen and (max-width: 391px) {
