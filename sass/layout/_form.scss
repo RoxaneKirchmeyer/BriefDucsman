@@ -1,18 +1,34 @@
 // form
 
 form {
-    background-color: $grisClairMoyen;
+    
         input {
             border-style: none none solid none;
-            background-color: $grisClairMoyen;
+            justify-content: center;
         }
         textarea {
             border-style: none none solid none;
-            background-color: $grisClairMoyen;
+            
         }
         div {
-            padding: 20px;
+            padding: 2px;
         }
     
 }
-
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:  20px;
+     
+  }
+.grid h3{
+    grid-column: span2;
+    margin: auto;
+}
+ 
+   
+.container {
+align-content: center;
+flex-direction: row;
+justify-content: flex-start;
+}

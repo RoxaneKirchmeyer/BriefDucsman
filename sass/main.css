@@ -27,7 +27,6 @@ header {
 }
 header a {
   color: #ffffff;
-  border: 1px rgba(255, 255, 255, 0.5) solid;
   padding: 10px;
 }
 
@@ -84,19 +83,32 @@ footer ul {
   color: #ffffff;
 }
 
-form {
-  background-color: #222222;
-}
 form input {
   border-style: none none solid none;
-  background-color: #222222;
+  justify-content: center;
 }
 form textarea {
   border-style: none none solid none;
-  background-color: #222222;
 }
 form div {
-  padding: 20px;
+  padding: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid h3 {
+  grid-column: span2;
+  margin: auto;
+}
+
+.container {
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 body {
@@ -106,7 +118,7 @@ body {
 
 nav {
   width: 20%;
-  background-color: #1b1b1b;
+  background-color: #8d8d8d;
   min-height: 100%;
   grid-row: span 3;
   position: fixed;
@@ -117,7 +129,7 @@ main {
 }
 
 body {
-  background-color: #222222;
+  background-color: #8d8d8d;
 }
 
 header {
