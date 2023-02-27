@@ -1,2 +1,10 @@
 // aside
 
+@media screen and (max-width:391px) {
+    aside {
+        margin: 0;
+        min-width: 100%;
+        text-align: center; 
+}
+
+}

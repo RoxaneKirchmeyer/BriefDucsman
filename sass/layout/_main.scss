@@ -1,6 +1,61 @@
-main{
+main {
+    width: 80%;
+    margin-left: 20%;
+    padding: 3rem 5rem 6rem 5rem;
+    box-sizing: border-box;
+    background-color: $grisClairMoyen;
+}
 
-grid-column-start: 2;
+@media screen and (max-width:391px) {
+    .index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
 
+        article {
 
+            h2,
+            h3 {
+                text-align: center;
+            }
+
+            .gridContainer {
+                display: block;
+
+                section {
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+
+        section {
+            min-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .chambre {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        padding: 1.5rem;
+
+        .details {
+            width: 100%;
+            text-align: center;
+                .list {
+                    width: 100%;
+                }
+            a {
+                width: auto;
+            }
+        }
+
+    }
 }
