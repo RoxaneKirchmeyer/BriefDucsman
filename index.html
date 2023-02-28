@@ -30,13 +30,14 @@
         </a>
 
         <ul>
-            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="index.html" title="Lien vers l'accueil">ACCUEIL</a></li>
             <li><a href="#">A PROPOS</a></li>
-            <li><a href="/pages/chambres.html">CHAMBRES & SUITES</a></li>
+            <li><a href="/pages/chambres.html" title="Lien vers la page des chambres & suites">CHAMBRES & SUITES</a>
+            </li>
             <li><a href="#">RESTAURANT</a></li>
             <li><a href="#">CENTRE DE BIEN-ÊTRE</a></li>
             <li><a href="#">ACTUALITÉ</a></li>
-            <li><a href="/pages/contact.html">CONTACT</a></li>
+            <li><a href="/pages/contact.html" title="Lien vers la page contact">CONTACT</a></li>
         </ul>
 
         <div class="tel">
@@ -50,7 +51,7 @@
             </a>
         </div>
     </nav>
-   
+
     <header>
         <section class="header">
             <h1>L'EXPÉRIENCE DU LUXE</h1>
@@ -63,8 +64,10 @@
                 <span class="ti-star"></span>
             </div>
             <div class="chambres">
-                <a href="#chambreSuite">CHAMBRES & SUITES</a>
+                <a href="#chambreSuite" title="Lien vers les chambres & suites">CHAMBRES & SUITES</a>
             </div>
+            <button type="button" id="leftButton">&lt;</button>
+            <button type="button" id="rightButton">&gt;</button>
         </section>
 
         <article>
@@ -94,8 +97,8 @@
                 </p>
             </section>
             <div class="imagePresentation">
-                <img src="img/rooms/8.jpg" alt="Restaurant de luxe" class="imagedecale">
-                <img src="img/rooms/2.jpg" alt="Chambre de luxe">
+                <img src="img/rooms/8.jpg" alt="Restaurant de luxe" class="imagedecale" title="Restaurant de luxe">
+                <img src="img/rooms/2.jpg" alt="Chambre de luxe" title="Chambre de luxe">
             </div>
         </article>
     </header>
@@ -109,7 +112,7 @@
                     <a href="/pages/chambres.html" class="reservation">RÉSERVER</a>
                     <div class="gridLegend">
                         <a href="/pages/chambres.html" class="price">150 € / NUIT</a>
-                        <a href="/pages/chambres.html">Suite Junior</a>
+                        <a href="/pages/chambres.html" title="Lien vers les chambres & suites">Suite Junior</a>
                         <hr>
                         <div class="invisible">
                             <div>
@@ -131,7 +134,7 @@
                     <a href="/pages/chambres.html" class="reservation">RÉSERVER</a>
                     <div class="gridLegend">
                         <a href="/pages/chambres.html" class="price">200 € / NUIT</a>
-                        <a href="/pages/chambres.html">Chambre familiale</a>
+                        <a href="/pages/chambres.html" title="Lien vers les chambres & suites">Chambre familiale</a>
                         <hr>
                         <div class="invisible">
                             <div>
@@ -153,7 +156,7 @@
                     <a href="/pages/chambres.html" class="reservation">RÉSERVER</a>
                     <div class="gridLegend">
                         <a href="/pages/chambres.html" class="price">250 € / NUIT</a>
-                        <a href="/pages/chambres.html">Chamble double</a>
+                        <a href="/pages/chambres.html" title="Lien vers les chambres & suites">Chamble double</a>
                         <hr>
                         <div class="invisible">
                             <div>
@@ -175,7 +178,7 @@
                     <a href="/pages/chambres.html" class="reservation">RÉSERVER</a>
                     <div class="gridLegend">
                         <a href="/pages/chambres.html" class="price">300 € / NUIT</a>
-                        <a href="/pages/chambres.html">Chambre deluxe</a>
+                        <a href="/pages/chambres.html" title="Lien vers les chambres & suites">Chambre deluxe</a>
                         <hr>
                         <div class="invisible">
                             <div>
@@ -197,7 +200,7 @@
                     <a href="/pages/chambres.html" class="reservation">RÉSERVER</a>
                     <div class="gridLegend">
                         <a href="/pages/chambres.html" class="price">350 € / NUIT</a>
-                        <a href="/pages/chambres.html">Chambre supérieure</a>
+                        <a href="/pages/chambres.html" title="Lien vers les chambres & suites">Chambre supérieure</a>
                         <hr>
                         <div class="invisible">
                             <div>
@@ -215,7 +218,6 @@
                         </div>
                     </div>
                 </section>
-
             </div>
         </article>
     </main>
@@ -409,5 +411,7 @@
         </article>
     </footer>
     <script src="menuBurger.js"></script>
+    <script src="slider.js"></script>
 </body>
+
 </html>

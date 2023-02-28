@@ -28,6 +28,23 @@ header {
         background-image: url("../../img/rooms/5.jpg");
     }
 
+    button {
+        background-color: $special;
+        color: $blanc;
+        border: none;
+        padding: 1rem;
+        font-size: 2rem;
+            
+    }
+    #leftButton {
+        position: absolute;
+        left: 20%;
+    }
+    #rightButton {
+        position: absolute;
+        right: 0;
+    }
+
     .header,
     .headerChambre {
         background-size: cover;
@@ -117,6 +134,17 @@ header {
         .header, .headerChambre {
             min-height: 50vh;
             background-position: center;
+        }
+        #leftButton, #rightButton{
+            font-size: 1.5rem;
+            top: 42vh;
+            padding: 0.5rem;
+        }
+        #leftButton {
+            left: 25%;
+        }
+        #rightButton {
+            right: 25%;
         }
     }
 

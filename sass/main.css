@@ -509,6 +509,21 @@ header .header {
 header .headerChambre {
   background-image: url("../../img/rooms/5.jpg");
 }
+header button {
+  background-color: #aa8453;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
+header #leftButton {
+  position: absolute;
+  left: 20%;
+}
+header #rightButton {
+  position: absolute;
+  right: 0;
+}
 header .header,
 header .headerChambre {
   background-size: cover;
@@ -589,6 +604,17 @@ header article .imagePresentation .imagedecale {
   header .header, header .headerChambre {
     min-height: 50vh;
     background-position: center;
+  }
+  header #leftButton, header #rightButton {
+    font-size: 1.5rem;
+    top: 42vh;
+    padding: 0.5rem;
+  }
+  header #leftButton {
+    left: 25%;
+  }
+  header #rightButton {
+    right: 25%;
   }
   header article {
     flex-direction: column;
