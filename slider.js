@@ -40,13 +40,13 @@ autoPlay = setInterval(nextSlide,5000)
 rightButton.addEventListener("click", () =>
     {
         nextSlide();
-        // clearInterval(autoPlay);
+        clearInterval(autoPlay);
     }
 )
 
 leftButton.addEventListener("click", () =>
     {
         previousSlide();
-        // clearInterval(autoPlay);
+        clearInterval(autoPlay);
     }
 ) 
