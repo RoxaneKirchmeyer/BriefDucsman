@@ -33,20 +33,25 @@ function previousSlide (){
     }
 }
 
+function autoPlay (){
+    myInterval = setInterval(nextSlide,4000)
+}
 
 // Evenements
-autoPlay = setInterval(nextSlide,5000)
+window.onload = autoPlay();
 
 rightButton.addEventListener("click", () =>
     {
         nextSlide();
-        clearInterval(autoPlay);
+        clearInterval(myInterval);
+        autoPlay();
     }
 )
 
 leftButton.addEventListener("click", () =>
     {
         previousSlide();
-        clearInterval(autoPlay);
+        clearInterval(myInterval);
+        autoPlay();
     }
 ) 
